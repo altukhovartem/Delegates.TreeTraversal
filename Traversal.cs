@@ -23,14 +23,14 @@ namespace Delegates.TreeTraversal
 			throw new NotImplementedException();
 		}
 
-		
+		public IEnumerable<T>  Travel<...>(root, childrenSelector, filter, resultSelector)
 	}
 
-	public static class Helper<T>
+	public static class Helper<T1, T2, T3, T4>
 	{
-		public static IEnumerable<T> GeneralTraversal(T current, Func<>)
+		public static IEnumerable<T1> GeneralTraversal(T1 currentObject, Func<T1,T2> Successors, Func<T2, T3> InterestedSuccessors, Func<T4> GetResult)
 		{
-
+			throw new NotImplementedException();
 		}
 
 	}
