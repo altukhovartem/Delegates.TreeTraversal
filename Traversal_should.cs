@@ -10,9 +10,7 @@ namespace Delegates.TreeTraversal
     [TestFixture]
     public class Traversal_should
     {
-        public void Test<T,TIntermediate>(IEnumerable<T> actual, 
-            Func<T,TIntermediate> selector, 
-            params TIntermediate[] expected)
+        public void Test<T,TIntermediate>(IEnumerable<T> actual, Func<T,TIntermediate> selector, params TIntermediate[] expected)
         {
             var a = actual.Select(selector).ToList();
             CollectionAssert.AreEquivalent(expected, a);
