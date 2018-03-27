@@ -5,6 +5,5 @@ C:\MyRepo\Delegates.TreeTraversal\bin\Debug\Delegates.TreeTraversal.exe
 C:\MyRepo\Delegates.TreeTraversal\bin\Debug\Delegates.TreeTraversal.pdb
 C:\MyRepo\Delegates.TreeTraversal\bin\Debug\nunit.framework.dll
 C:\MyRepo\Delegates.TreeTraversal\bin\Debug\nunitlite.dll
-C:\MyRepo\Delegates.TreeTraversal\obj\Debug\Delegates.TreeTraversal.csproj.CopyComplete
 C:\MyRepo\Delegates.TreeTraversal\obj\Debug\Delegates.TreeTraversal.exe
 C:\MyRepo\Delegates.TreeTraversal\obj\Debug\Delegates.TreeTraversal.pdb

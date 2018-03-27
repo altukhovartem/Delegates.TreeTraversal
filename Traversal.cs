@@ -10,30 +10,43 @@ namespace Delegates.TreeTraversal
 	{
 		public static IEnumerable<int> GetBinaryTreeValues(BinaryTree<int> tree)
 		{
-			throw new NotImplementedException();
+			return Travel
+			(
+				tree,
+				t => t,
+				j => j.Left 
+				j => j.Name
+			);
 		}
 
 		public static IEnumerable<Job> GetEndJobs(Job tree)
 		{
-			throw new NotImplementedException();
+			return Travel
+			(
+				tree,
+				j => j.Subjobs,
+				j => j.Subjobs == null,
+				j => j.Name
+			);
 		}
 
 		public static IEnumerable<Product> GetProducts(ProductCategory tree)
 		{
-			throw new NotImplementedException();
+			return Travel
+			(
+				tree,
+				j => j.Categories,
+				j => j.Categories == null,
+				j => j.Products.Select(p => p.Name)
+			);
 		}
 
-		public IEnumerable<T>  Travel<...>(root, childrenSelector, filter, resultSelector)
-	}
-
-	public static class Helper<T1, T2, T3, T4>
-	{
-		public static IEnumerable<T1> GeneralTraversal(T1 currentObject, Func<T1,T2> Successors, Func<T2, T3> InterestedSuccessors, Func<T4> GetResult)
+		public static IEnumerable<Tin> Travel<Tin, Tout>(Tin root, Func<Tin,IEnumerable<Tin>> childrenSelector, Func<Tin,bool> filter, Func<Tin, Tout> resultSelector)
 		{
 			throw new NotImplementedException();
 		}
-
 	}
+
 
 
 }
