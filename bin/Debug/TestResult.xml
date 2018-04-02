@@ -1,51 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<test-run id="2" name="Delegates.TreeTraversal.exe" fullname="C:/MyRepo/Delegates.TreeTraversal/bin/Debug/Delegates.TreeTraversal.exe" testcasecount="3" result="Failed" start-time="2018-03-27 19:23:23Z" end-time="2018-03-27 19:23:23Z" duration="0.308756" total="3" passed="0" failed="3" inconclusive="0" skipped="0" asserts="0" random-seed="1112864365">
+<test-run id="2" name="Delegates.TreeTraversal.exe" fullname="C:/MyRepo/Delegates.TreeTraversal/bin/Debug/Delegates.TreeTraversal.exe" testcasecount="1" result="Failed" start-time="2018-04-02 16:24:14Z" end-time="2018-04-02 16:24:15Z" duration="0.039367" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" random-seed="1983749671">
   <command-line><![CDATA["C:\MyRepo\Delegates.TreeTraversal\bin\Debug\Delegates.TreeTraversal.exe"   ]]></command-line>
   <filter />
-  <test-suite type="Assembly" id="1004" name="Delegates.TreeTraversal.exe" fullname="C:/MyRepo/Delegates.TreeTraversal/bin/Debug/Delegates.TreeTraversal.exe" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2018-03-27 19:23:23Z" end-time="2018-03-27 19:23:23Z" duration="0.308756" total="3" passed="0" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="0">
-    <environment framework-version="3.6.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\MyRepo\Delegates.TreeTraversal\bin\Debug" machine-name="DESKTOP-MJHFLF4" user="altuk" user-domain="DESKTOP-MJHFLF4" culture="en-US" uiculture="en-US" os-architecture="x86" />
+  <test-suite type="Assembly" id="1002" name="Delegates.TreeTraversal.exe" fullname="C:/MyRepo/Delegates.TreeTraversal/bin/Debug/Delegates.TreeTraversal.exe" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2018-04-02 16:24:14Z" end-time="2018-04-02 16:24:15Z" duration="0.039367" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.6.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\MyRepo\Delegates.TreeTraversal\bin\Debug" machine-name="MSK-WS-120" user="aaltukhov" user-domain="INT" culture="ru-RU" uiculture="en-US" os-architecture="x86" />
     <settings>
       <setting name="WorkDirectory" value="C:\MyRepo\Delegates.TreeTraversal\bin\Debug" />
       <setting name="NumberOfTestWorkers" value="4" />
     </settings>
     <properties>
-      <property name="_PID" value="10524" />
+      <property name="_PID" value="10236" />
       <property name="_APPDOMAIN" value="Delegates.TreeTraversal.exe" />
     </properties>
     <failure>
       <message><![CDATA[One or more child tests had errors]]></message>
     </failure>
-    <test-suite type="TestSuite" id="1005" name="Delegates" fullname="Delegates" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2018-03-27 19:23:23Z" end-time="2018-03-27 19:23:23Z" duration="0.248275" total="3" passed="0" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="TestSuite" id="1003" name="Delegates" fullname="Delegates" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2018-04-02 16:24:15Z" end-time="2018-04-02 16:24:15Z" duration="0.029018" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
       <failure>
         <message><![CDATA[One or more child tests had errors]]></message>
       </failure>
-      <test-suite type="TestSuite" id="1006" name="TreeTraversal" fullname="Delegates.TreeTraversal" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2018-03-27 19:23:23Z" end-time="2018-03-27 19:23:23Z" duration="0.245111" total="3" passed="0" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestSuite" id="1004" name="TreeTraversal" fullname="Delegates.TreeTraversal" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2018-04-02 16:24:15Z" end-time="2018-04-02 16:24:15Z" duration="0.026088" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
         <failure>
           <message><![CDATA[One or more child tests had errors]]></message>
         </failure>
-        <test-suite type="TestFixture" id="1000" name="Traversal_should" fullname="Delegates.TreeTraversal.Traversal_should" classname="Delegates.TreeTraversal.Traversal_should" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2018-03-27 19:23:23Z" end-time="2018-03-27 19:23:23Z" duration="0.233818" total="3" passed="0" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestFixture" id="1000" name="Traversal_should" fullname="Delegates.TreeTraversal.Traversal_should" classname="Delegates.TreeTraversal.Traversal_should" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2018-04-02 16:24:15Z" end-time="2018-04-02 16:24:15Z" duration="0.021111" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
           <failure>
             <message><![CDATA[One or more child tests had errors]]></message>
           </failure>
-          <test-case id="1001" name="GetBinaryTreeValues" fullname="Delegates.TreeTraversal.Traversal_should.GetBinaryTreeValues" methodname="GetBinaryTreeValues" classname="Delegates.TreeTraversal.Traversal_should" runstate="Runnable" seed="1368476722" result="Failed" label="Error" start-time="2018-03-27 19:23:23Z" end-time="2018-03-27 19:23:23Z" duration="0.169986" asserts="0">
+          <test-case id="1001" name="GetEndJobs" fullname="Delegates.TreeTraversal.Traversal_should.GetEndJobs" methodname="GetEndJobs" classname="Delegates.TreeTraversal.Traversal_should" runstate="Runnable" seed="817101669" result="Failed" label="Error" start-time="2018-04-02 16:24:15Z" end-time="2018-04-02 16:24:15Z" duration="0.012352" asserts="0">
             <failure>
               <message><![CDATA[System.NotImplementedException : The method or operation is not implemented.]]></message>
-              <stack-trace><![CDATA[   at Delegates.TreeTraversal.Traversal.GetBinaryTreeValues(BinaryTree`1 tree) in C:\MyRepo\Delegates.TreeTraversal\Traversal.cs:line 13
-   at Delegates.TreeTraversal.Traversal_should.GetBinaryTreeValues() in C:\MyRepo\Delegates.TreeTraversal\Traversal_should.cs:line 52]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="1002" name="GetEndJobs" fullname="Delegates.TreeTraversal.Traversal_should.GetEndJobs" methodname="GetEndJobs" classname="Delegates.TreeTraversal.Traversal_should" runstate="Runnable" seed="723946100" result="Failed" label="Error" start-time="2018-03-27 19:23:23Z" end-time="2018-03-27 19:23:23Z" duration="0.004213" asserts="0">
-            <failure>
-              <message><![CDATA[System.NotImplementedException : The method or operation is not implemented.]]></message>
-              <stack-trace><![CDATA[   at Delegates.TreeTraversal.Traversal.GetEndJobs(Job tree) in C:\MyRepo\Delegates.TreeTraversal\Traversal.cs:line 23
+              <stack-trace><![CDATA[   at Delegates.TreeTraversal.Traversal.Travel[Tin,Tout](Tin root, Func`2 childrenSelector, Func`2 filter, Func`2 resultSelector) in C:\MyRepo\Delegates.TreeTraversal\Traversal.cs:line 58
+   at Delegates.TreeTraversal.Traversal.GetEndJobs(Job tree) in C:\MyRepo\Delegates.TreeTraversal\Traversal.cs:line 25
    at Delegates.TreeTraversal.Traversal_should.GetEndJobs() in C:\MyRepo\Delegates.TreeTraversal\Traversal_should.cs:line 85]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="1003" name="GetProducts" fullname="Delegates.TreeTraversal.Traversal_should.GetProducts" methodname="GetProducts" classname="Delegates.TreeTraversal.Traversal_should" runstate="Runnable" seed="980807576" result="Failed" label="Error" start-time="2018-03-27 19:23:23Z" end-time="2018-03-27 19:23:23Z" duration="0.004876" asserts="0">
-            <failure>
-              <message><![CDATA[System.NotImplementedException : The method or operation is not implemented.]]></message>
-              <stack-trace><![CDATA[   at Delegates.TreeTraversal.Traversal.GetProducts(ProductCategory tree) in C:\MyRepo\Delegates.TreeTraversal\Traversal.cs:line 28
-   at Delegates.TreeTraversal.Traversal_should.GetProducts() in C:\MyRepo\Delegates.TreeTraversal\Traversal_should.cs:line 131]]></stack-trace>
             </failure>
           </test-case>
         </test-suite>

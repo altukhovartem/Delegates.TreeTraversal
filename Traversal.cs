@@ -26,7 +26,7 @@ namespace Delegates.TreeTraversal
 			(
 				tree,
 				j => j.Subjobs,
-				j => j.Subjobs == null,
+				j => j.Subjobs.Count() == 0,
 				j => j
 			);
 		}
@@ -45,10 +45,19 @@ namespace Delegates.TreeTraversal
 
 		public static IEnumerable<Tout> Travel<Tin, Tout>(Tin root, Func<Tin,IEnumerable<Tin>> childrenSelector, Func<Tin,bool> filter, Func<Tin, Tout> resultSelector)
 		{
-			var a = childrenSelector.Invoke(root);
+			List<Tout> tempCollection = new List<Tout>();
+
+			foreach (var item in childrenSelector(root))
+			{
+				tempCollection.Add(resultSelector(item));
+			}
 
 
-			return childrenSelector.Invoke(root);
+
+			throw new NotImplementedException();
+			////return childrenSelector.Invoke(root);
+
+
 		}
 	}
 
