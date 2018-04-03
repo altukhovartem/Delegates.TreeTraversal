@@ -47,19 +47,26 @@ namespace Delegates.TreeTraversal
 		{
 			//var selector = childrenSelector(root).Where(filter).SelectMany(n => Travel(n, childrenSelector, filter, resultSelector));
 			//var selector2 = Enumerable.Concat(childrenSelector(root).SelectMany(resultSelector))
-				
+
 			//return childrenSelector.Invoke(root).Where(filter).Select(resultSelector); 
 
-			List<Tout> tempCollection = new List<Tout>();
+			Tin current = root;
 
-			foreach (var item in childrenSelector(root))
+			foreach (var item in childrenSelector(current))
 			{
-				tempCollection.Add(resultSelector(item));
+				if (filter(item))
+				{
+					yield return resultSelector(item);
+				}
+				else
+					current = item;
 			}
 
+			Travel(current, childrenSelector, filter, resultSelector);
 
 
-			throw new NotImplementedException();
+
+			//throw new NotImplementedException();
 			////return childrenSelector.Invoke(root);
 		}
 	}

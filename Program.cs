@@ -38,6 +38,6 @@ class Program
 
 		var x = Traversal.GetEndJobs(data);
 
-		//new AutoRun().Execute(args);
+		new AutoRun().Execute(args);
 	}
 }
