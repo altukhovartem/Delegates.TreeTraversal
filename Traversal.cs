@@ -10,7 +10,6 @@ namespace Delegates.TreeTraversal
 	{
 		public static IEnumerable<int> GetBinaryTreeValues(BinaryTree<int> tree)
 		{
-			throw new NotImplementedException();
 			//return Travel
 			//(
 			//	tree,
@@ -18,6 +17,7 @@ namespace Delegates.TreeTraversal
 			//	j => j.Left 
 			//	j => j.Name
 			//);
+			throw new NotImplementedException();
 		}
 
 		public static IEnumerable<Job> GetEndJobs(Job tree)
@@ -33,7 +33,6 @@ namespace Delegates.TreeTraversal
 
 		public static IEnumerable<Product> GetProducts(ProductCategory tree)
 		{
-			throw new NotImplementedException();
 			//return Travel
 			//(
 			//	tree,
@@ -41,14 +40,27 @@ namespace Delegates.TreeTraversal
 			//	j => j.Categories == null,
 			//	j => j.Products.Select(p => p.Name)
 			//);
+			throw new NotImplementedException();
 		}
 
 		public static IEnumerable<Tout> Travel<Tin, Tout>(Tin root, Func<Tin,IEnumerable<Tin>> childrenSelector, Func<Tin,bool> filter, Func<Tin, Tout> resultSelector)
 		{
-			var selector = childrenSelector(root).Where(filter).SelectMany(n => Travel(n, childrenSelector, filter, resultSelector));
-			var selector2 = Enumerable.Concat(childrenSelector(root).SelectMany(resultSelector))
+			//var selector = childrenSelector(root).Where(filter).SelectMany(n => Travel(n, childrenSelector, filter, resultSelector));
+			//var selector2 = Enumerable.Concat(childrenSelector(root).SelectMany(resultSelector))
 				
-				return childrenSelector.Invoke(root).Where(filter).Select(resultSelector); 
+			//return childrenSelector.Invoke(root).Where(filter).Select(resultSelector); 
+
+			List<Tout> tempCollection = new List<Tout>();
+
+			foreach (var item in childrenSelector(root))
+			{
+				tempCollection.Add(resultSelector(item));
+			}
+
+
+
+			throw new NotImplementedException();
+			////return childrenSelector.Invoke(root);
 		}
 	}
 
