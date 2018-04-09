@@ -52,17 +52,30 @@ namespace Delegates.TreeTraversal
 
 			Tin current = root;
 
-			foreach (var item in childrenSelector(current))
+			if (filter(current))
 			{
-				if (filter(item))
+				yield return resultSelector(current);
+			}
+			else
+			{
+				foreach (var item in childrenSelector(current))
 				{
-					yield return resultSelector(item);
+					if (filter(item))
+					{
+						yield return resultSelector(item);
+					}
+					else
+					{
+						foreach (var item2 in Travel(item, childrenSelector, filter, resultSelector))
+						{
+							yield return item2;
+						}
+					}
 				}
-				else
-					current = item;
 			}
 
-			Travel(current, childrenSelector, filter, resultSelector);
+		
+
 
 
 
