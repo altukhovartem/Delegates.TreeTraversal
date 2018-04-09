@@ -45,25 +45,14 @@ namespace Delegates.TreeTraversal
 
 		public static IEnumerable<Tout> Travel<Tin, Tout>(Tin root, Func<Tin,IEnumerable<Tin>> childrenSelector, Func<Tin,bool> filter, Func<Tin, Tout> resultSelector)
 		{
-			//var selector = childrenSelector(root).Where(filter).SelectMany(n => Travel(n, childrenSelector, filter, resultSelector));
-			//var selector2 = Enumerable.Concat(childrenSelector(root).SelectMany(resultSelector))
-
-			//return childrenSelector.Invoke(root).Where(filter).Select(resultSelector); 
-
-			Tin current = root;
-
-			if (filter(current))
-			{
-				yield return resultSelector(current);
-			}
+			if (filter(root))
+				yield return resultSelector(root);
 			else
 			{
-				foreach (var item in childrenSelector(current))
+				foreach (var item in childrenSelector(root))
 				{
 					if (filter(item))
-					{
 						yield return resultSelector(item);
-					}
 					else
 					{
 						foreach (var item2 in Travel(item, childrenSelector, filter, resultSelector))
@@ -73,14 +62,6 @@ namespace Delegates.TreeTraversal
 					}
 				}
 			}
-
-		
-
-
-
-
-			//throw new NotImplementedException();
-			////return childrenSelector.Invoke(root);
 		}
 	}
 
