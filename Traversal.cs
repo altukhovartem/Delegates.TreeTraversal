@@ -10,12 +10,15 @@ namespace Delegates.TreeTraversal
 	{
 		public static IEnumerable<int> GetBinaryTreeValues(BinaryTree<int> tree)
 		{
-			//return Travel
+			//return Travel<BinaryTree<int>, int>
 			//(
 			//	tree,
-			//	t => t,
-			//	j => j.
-			//	j => j.
+			//	t => t.Left,
+			//	t => t != null,
+			//	t => t.Value
+
+
+
 			//);
 			throw new NotImplementedException();
 		}
@@ -33,11 +36,11 @@ namespace Delegates.TreeTraversal
 
 		public static IEnumerable<Product> GetProducts(ProductCategory tree)
 		{
-			//return Travel
+			//return Travel<ProductCategory, Product>
 			//(
 			//	tree,
 			//	j => j.Categories,
-			//	j => j.Categories == null,
+			//	j => j.Categories.SelectMany(),
 			//	j => j.Products.Select(p => p.Name)
 			//);
 			throw new NotImplementedException();
@@ -52,7 +55,7 @@ namespace Delegates.TreeTraversal
 			{
 				foreach (var item2 in Travel(item, childrenSelector, filter, resultSelector))
 				{
-					yield return item2;
+				 	yield return item2;
 				}
 			}
 		}
