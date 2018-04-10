@@ -14,8 +14,8 @@ namespace Delegates.TreeTraversal
 			//(
 			//	tree,
 			//	t => t,
-			//	j => j.Left 
-			//	j => j.Name
+			//	j => j.
+			//	j => j.
 			//);
 			throw new NotImplementedException();
 		}
@@ -43,28 +43,18 @@ namespace Delegates.TreeTraversal
 			throw new NotImplementedException();
 		}
 
-		public static IEnumerable<Tout> Travel<Tin, Tout>(Tin root, Func<Tin,IEnumerable<Tin>> childrenSelector, Func<Tin,bool> filter, Func<Tin, Tout> resultSelector)
+		public static IEnumerable<Tout> Travel<Tin, Tout>(Tin root, Func<Tin, IEnumerable<Tin>> childrenSelector, Func<Tin, bool> filter, Func<Tin, Tout> resultSelector)
 		{
 			if (filter(root))
 				yield return resultSelector(root);
-			else
+
+			foreach (var item in childrenSelector(root))
 			{
-				foreach (var item in childrenSelector(root))
+				foreach (var item2 in Travel(item, childrenSelector, filter, resultSelector))
 				{
-					if (filter(item))
-						yield return resultSelector(item);
-					else
-					{
-						foreach (var item2 in Travel(item, childrenSelector, filter, resultSelector))
-						{
-							yield return item2;
-						}
-					}
+					yield return item2;
 				}
 			}
 		}
 	}
-
-
-
 }

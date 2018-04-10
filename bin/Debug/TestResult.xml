@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<test-run id="2" name="Delegates.TreeTraversal.exe" fullname="C:/MyRepo/Delegates.TreeTraversal/bin/Debug/Delegates.TreeTraversal.exe" testcasecount="1" result="Passed" start-time="2018-04-09 20:19:33Z" end-time="2018-04-09 20:19:33Z" duration="0.139784" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="1" random-seed="680432381">
+<test-run id="2" name="Delegates.TreeTraversal.exe" fullname="C:/MyRepo/Delegates.TreeTraversal/bin/Debug/Delegates.TreeTraversal.exe" testcasecount="1" result="Passed" start-time="2018-04-10 20:16:56Z" end-time="2018-04-10 20:16:56Z" duration="0.204133" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="1" random-seed="1672828746">
   <command-line><![CDATA["C:\MyRepo\Delegates.TreeTraversal\bin\Debug\Delegates.TreeTraversal.exe"   ]]></command-line>
   <filter />
-  <test-suite type="Assembly" id="1002" name="Delegates.TreeTraversal.exe" fullname="C:/MyRepo/Delegates.TreeTraversal/bin/Debug/Delegates.TreeTraversal.exe" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-04-09 20:19:33Z" end-time="2018-04-09 20:19:33Z" duration="0.139784" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+  <test-suite type="Assembly" id="1002" name="Delegates.TreeTraversal.exe" fullname="C:/MyRepo/Delegates.TreeTraversal/bin/Debug/Delegates.TreeTraversal.exe" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-04-10 20:16:56Z" end-time="2018-04-10 20:16:56Z" duration="0.204133" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
     <environment framework-version="3.6.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\MyRepo\Delegates.TreeTraversal\bin\Debug" machine-name="DESKTOP-MJHFLF4" user="altuk" user-domain="DESKTOP-MJHFLF4" culture="en-US" uiculture="en-US" os-architecture="x86" />
     <settings>
       <setting name="WorkDirectory" value="C:\MyRepo\Delegates.TreeTraversal\bin\Debug" />
       <setting name="NumberOfTestWorkers" value="4" />
     </settings>
     <properties>
-      <property name="_PID" value="10752" />
+      <property name="_PID" value="11864" />
       <property name="_APPDOMAIN" value="Delegates.TreeTraversal.exe" />
     </properties>
-    <test-suite type="TestSuite" id="1003" name="Delegates" fullname="Delegates" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-04-09 20:19:33Z" end-time="2018-04-09 20:19:33Z" duration="0.106142" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
-      <test-suite type="TestSuite" id="1004" name="TreeTraversal" fullname="Delegates.TreeTraversal" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-04-09 20:19:33Z" end-time="2018-04-09 20:19:33Z" duration="0.102761" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
-        <test-suite type="TestFixture" id="1000" name="Traversal_should" fullname="Delegates.TreeTraversal.Traversal_should" classname="Delegates.TreeTraversal.Traversal_should" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-04-09 20:19:33Z" end-time="2018-04-09 20:19:33Z" duration="0.092051" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
-          <test-case id="1001" name="GetEndJobs" fullname="Delegates.TreeTraversal.Traversal_should.GetEndJobs" methodname="GetEndJobs" classname="Delegates.TreeTraversal.Traversal_should" runstate="Runnable" seed="597047671" result="Passed" start-time="2018-04-09 20:19:33Z" end-time="2018-04-09 20:19:33Z" duration="0.059653" asserts="1" />
+    <test-suite type="TestSuite" id="1003" name="Delegates" fullname="Delegates" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-04-10 20:16:56Z" end-time="2018-04-10 20:16:56Z" duration="0.157485" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+      <test-suite type="TestSuite" id="1004" name="TreeTraversal" fullname="Delegates.TreeTraversal" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-04-10 20:16:56Z" end-time="2018-04-10 20:16:56Z" duration="0.153557" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+        <test-suite type="TestFixture" id="1000" name="Traversal_should" fullname="Delegates.TreeTraversal.Traversal_should" classname="Delegates.TreeTraversal.Traversal_should" runstate="Runnable" testcasecount="1" result="Passed" start-time="2018-04-10 20:16:56Z" end-time="2018-04-10 20:16:56Z" duration="0.129852" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+          <test-case id="1001" name="GetEndJobs" fullname="Delegates.TreeTraversal.Traversal_should.GetEndJobs" methodname="GetEndJobs" classname="Delegates.TreeTraversal.Traversal_should" runstate="Runnable" seed="54982632" result="Passed" start-time="2018-04-10 20:16:56Z" end-time="2018-04-10 20:16:56Z" duration="0.084136" asserts="1" />
         </test-suite>
       </test-suite>
     </test-suite>
