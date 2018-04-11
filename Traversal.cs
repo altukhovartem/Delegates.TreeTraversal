@@ -36,14 +36,15 @@ namespace Delegates.TreeTraversal
 
 		public static IEnumerable<Product> GetProducts(ProductCategory tree)
 		{
-			//return Travel<ProductCategory, Product>
-			//(
-			//	tree,
-			//	j => j.Categories,
-			//	j => j.Categories.SelectMany(),
-			//	j => j.Products.Select(p => p.Name)
-			//);
-			throw new NotImplementedException();
+			return Travel<ProductCategory, Product>
+			(
+				tree,
+				j => j.Categories,
+				//	j => j.GetType() == typeof(Product),
+				j => j.Products.Count > 0,
+				j => j.Products.First()
+			);
+			//throw new NotImplementedException();
 		}
 
 		public static IEnumerable<Tout> Travel<Tin, Tout>(Tin root, Func<Tin, IEnumerable<Tin>> childrenSelector, Func<Tin, bool> filter, Func<Tin, Tout> resultSelector)

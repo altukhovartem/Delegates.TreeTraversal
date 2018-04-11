@@ -9,7 +9,7 @@ namespace Delegates.TreeTraversal
     public class ProductCategory
     {
         public List<Product> Products = new List<Product>();
-        public List<ProductCategory> Categories = new List<ProductCategory>();
+        public List<	ProductCategory> Categories = new List<ProductCategory>();
     }
 
     public class Product
