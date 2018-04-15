@@ -10,16 +10,13 @@ namespace Delegates.TreeTraversal
 	{
 		public static IEnumerable<int> GetBinaryTreeValues(BinaryTree<int> tree)
 		{
-			//return Travel<BinaryTree<int>, int>
-			//(
-			//	tree,
-			//	t => t.Left,
-			//	t => t != null,
-			//	t => t.Value
-
-
-
-			//);
+			return Travel<BinaryTree<int>, int>
+			(
+				tree,
+				t => new BinaryTree<int>[] { t.Left, t.Right }.Where(e => e != null),
+				t => t != null,
+				t => t.Value
+			);
 			throw new NotImplementedException();
 		}
 
@@ -36,21 +33,21 @@ namespace Delegates.TreeTraversal
 
 		public static IEnumerable<Product> GetProducts(ProductCategory tree)
 		{
-			return Travel<ProductCategory, Product>
+			return Travel<ProductCategory, IEnumerable<Product>>
 			(
 				tree,
 				j => j.Categories,
-				//	j => j.GetType() == typeof(Product),
 				j => j.Products.Count > 0,
-				j => j.Products.First()
-			);
-			//throw new NotImplementedException();
+				j =>  j.Products
+			).SelectMany(t=>t);
 		}
 
 		public static IEnumerable<Tout> Travel<Tin, Tout>(Tin root, Func<Tin, IEnumerable<Tin>> childrenSelector, Func<Tin, bool> filter, Func<Tin, Tout> resultSelector)
 		{
 			if (filter(root))
 				yield return resultSelector(root);
+
+			var b = childrenSelector(root);
 
 			foreach (var item in childrenSelector(root))
 			{
